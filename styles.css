@@ -23,8 +23,8 @@ body {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 400;
     font-size: 56px;
-    padding: 64px 29px;
     line-height: 67px;
+    padding: 64px 29px;
 }
 
 .main {
@@ -50,8 +50,8 @@ body {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    padding: 20px 40px;
     line-height: 28px;
+    padding: 20px 40px;
     border-radius: 8px;
     border: 2px solid #017187;
 }
@@ -64,9 +64,9 @@ body {
 }
 
 .btn:hover {
-    cursor: pointer;
     background-color: #67AAB7;
     border-color: #67AAB7;
+    cursor: pointer;
 }
 
 .btn--light {
@@ -86,4 +86,47 @@ body {
     background-color: transparent;
     color: #67AAB7;
     border-color: #67AAB7;
+}
+
+.btn-pill {
+    background-color: #F43F5E;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px 25px 15px;
+    border-radius: 100px;
+    border: 1px solid #F43F5E;
+}
+
+.btn-pill:disabled {
+    background-color: #E5E7EB;
+    color: #9CA3AF;
+    border: 1px solid #E5E7EB;
+    pointer-events: none; /* Disables hover effects */
+}
+
+.btn-pill:hover {
+    background-color: #9F1239;
+    border-color: #9F1239;
+    cursor: pointer;
+}
+
+.btn-pill--secondary {
+    background-color: #0EA5E9;
+    border-color: #0EA5E9;
+}
+
+.btn-pill--secondary:disabled {
+    background-color: #E5E7EB;
+    color: #9CA3AF;
+    border: 1px solid #E5E7EB;
+    pointer-events: none; /* Disables hover effects */
+}
+
+.btn-pill--secondary:hover {
+    background-color: #075985;
+    border-color: #075985;
+    cursor: pointer;
 }

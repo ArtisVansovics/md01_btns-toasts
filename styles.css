@@ -38,6 +38,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 23px;
+    align-items: baseline;
 }
 
 .disabled-wrapper {
@@ -159,3 +160,58 @@ body {
     outline-color: #7DD3FC;
 }
 
+.btn-pill-large {
+    background-color: #FFD159;
+    color: #FFFFFF;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    padding: 14px 34px;
+    border-radius: 30px;
+    border: 1.5px solid #FFD159;
+    box-shadow:
+                0 14px 23px
+                rgba(28, 37, 44, 0.08);
+}
+
+.btn-pill-large:disabled {
+    background-color: #F1EBF5;
+    color: #AEA8B2;
+    border-color: #F1EBF5;
+    pointer-events: none;
+}
+
+.btn-pill-large:hover {
+    background-color: #FFFFFF;
+    color: #FFD159;
+    cursor: pointer;
+}
+
+.btn-sub {
+    background-color: #FFFFFF;
+    color: #5C6BC0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.36px;
+    padding: 11px 20px;
+    border-radius: 3px;
+    border: 1px solid #5C6BC0;
+}
+.btn-sub:disabled {
+    background-color:transparent;
+    color: #5C6BC0;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn-sub:hover {
+    background-color: #5C6BC0;
+    color: #FFFFFF;
+    box-shadow:
+                0 2px 5px
+                rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}

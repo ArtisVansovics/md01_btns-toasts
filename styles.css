@@ -38,7 +38,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 23px;
-    align-items: baseline;
+    align-items: baseline; /* Aligns child items based on their text baseline */
 }
 
 .disabled-wrapper {

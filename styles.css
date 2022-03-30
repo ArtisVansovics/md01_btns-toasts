@@ -11,7 +11,6 @@ body {
 .wrapper {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 20px;
 }
 
 .wrapper > * {
@@ -28,8 +27,21 @@ body {
     line-height: 67px;
 }
 
-.flex-container {
+.main {
+    display: flex;
+    flex-flow: column wrap;
     padding: 29px;
+    gap: 23px;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.disabled-wrapper {
+    cursor: not-allowed;
 }
 
 .btn {
@@ -41,8 +53,14 @@ body {
     padding: 20px 40px;
     line-height: 28px;
     border-radius: 8px;
-    margin-right: 23px;
     border: 2px solid #017187;
+}
+
+.btn:disabled {
+    background-color: #E9E9E9;
+    color: #A9A9A9;
+    border: 2px solid #CACACA;
+    pointer-events: none; /* Disables hover effects */
 }
 
 .btn:hover {
@@ -51,27 +69,21 @@ body {
     border-color: #67AAB7;
 }
 
-.btn--disabled {
-    background-color: #E9E9E9;
-    color: #A9A9A9;
-    border: 2px solid #CACACA;
-    pointer-events: none; /* Disables hover effects */
-}
-
-.btn-light {
+.btn--light {
     background-color: transparent;
     color: #017187;
     border: 2px solid #017187;
 }
 
-.btn-light:hover {
+.btn--light:disabled {
     background-color: transparent;
-    color: #67AAB7;
-    border-color: #67AAB7;
-}
-
-.btn-light--disabled {
     border-color: #CACACA;
     color: #A9A9A9;
     pointer-events: none;
+}
+
+.btn--light:hover {
+    background-color: transparent;
+    color: #67AAB7;
+    border-color: #67AAB7;
 }

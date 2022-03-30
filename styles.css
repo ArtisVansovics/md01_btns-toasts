@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     padding: 29px;
-    gap: 23px;
+    gap: 54px;
 }
 
 .flex-container {
@@ -104,7 +104,7 @@ body {
     background-color: #E5E7EB;
     color: #9CA3AF;
     border: 1px solid #E5E7EB;
-    pointer-events: none; /* Disables hover effects */
+    pointer-events: none;
 }
 
 .btn-pill:hover {
@@ -118,15 +118,44 @@ body {
     border-color: #0EA5E9;
 }
 
-.btn-pill--secondary:disabled {
-    background-color: #E5E7EB;
-    color: #9CA3AF;
-    border: 1px solid #E5E7EB;
-    pointer-events: none; /* Disables hover effects */
-}
-
 .btn-pill--secondary:hover {
     background-color: #075985;
     border-color: #075985;
+}
+
+.btn-pill-light {
+    background-color: transparent;
+    color: #F43F5E;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px 25px 15px;
+    border-radius: 100px;
+    border: 2px solid #F43F5E;
+}
+
+.btn-pill-light:disabled {
+    color: rgba(156, 163, 175, 0.5); /* #9CA3AF with 0.5 opacity */
+    border-color: #E5E7EB;
+    pointer-events: none;
+}
+
+.btn-pill-light:hover {
+    color: #9F1239;
+    border-color: #9F1239;
+    outline: 4px solid #FDA4AF;
     cursor: pointer;
 }
+
+.btn-pill-light--secondary {
+    color: #0EA5E9;
+    border-color: #0EA5E9;
+}
+
+.btn-pill-light--secondary:hover {
+    color: #075985;
+    border-color: #075985;
+    outline-color: #7DD3FC;
+}
+
